@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Red Hat Display';
+}
+.logo {
+    width: 119px;
+    height: 28px;
+    margin: 80px auto;
+}
+.hidden-img {
+    display: none;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+.img-cover {
+    width: 370px;
+    height: 310px;
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+.title {
+    width: 540px;
+    text-align: center;
+}
+h1 {
+    font-size: 64px;
+    line-height: 64px;
+    color: #28283D;
+    width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+.header-quote {
+    font-size: 18px;
+    color: #87879D;
+    line-height: 26px;
+    width: 540px;
+    text-align: center;
+}
+button {
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 15px;
+    margin: 4px;
+    width: 193;
+    height: 58px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    vertical-align: top;
+}
+.button-hero-left{
+    background-color: #4D96A9;
+}
+.button-hero-right, .footer-button {
+    background-color: #855FB1;
+}
+button:hover {
+    cursor: pointer;
+}
+.button-hero-left:hover {
+    background-color: #71C0D4;
+}
+.button-hero-right:hover, .footer-button:hover {
+    background-color: #B18BDD;
+}
+.version {
+    color: #8FE3F9
+}
+.footer-version {
+    color: #D9B8FF
+}
+.circle {
+    margin: 120px auto 80px auto;
+}
+
+.inner-circle {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #87879D;
+    border-radius: 10000px;
+    margin: auto;
+    background-color: #ffffff;
+}
+.vertical {
+    height: 84px;
+    border: 1px solid #87879D;
+    margin: auto;
+    background-color: #87879D;
+    width: 1px;
+}
+.circle-text {
+    font-size: 16px;
+    color: #87879D;
+    width: 18px;
+    line-height: 26px;
+    margin: 25% auto;
+}
+.gallary-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.img-gallary {
+    width: 100%;
+    height: 242px;
+    border-radius: 10px;
+}
+.last {
+    width: 540px;
+    height: 288px;
+    margin: 50px auto;
+}
+.last-quote {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    color: #4D96A9;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+}
+h2 {
+    width: 445px;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: bold;
+    color: #28283D;
+    text-align: center;
+    margin: 30px auto;
+}
+.content {
+    width: 540px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #87879D;
+    text-align: center;
+    margin-bottom: 0;
+}
+.circle-two {
+    position: relative;
+    margin-bottom: -30px;
+    z-index: 99999;
+}
+#footer {
+    background-image: url("./assets/desktop/image-footer.jpg");
+    height: 308px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 308px;
+    background-color: hsl(192, 37%, 48%, 0.9);
+    margin-bottom: 0;
+}
+.footer-title {
+    width: 340px;
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+}
+.footer-quote {
+    width: 320px;
+    font-size: 18px;
+    line-height: 26px;
+    vertical-align: top;
+    color: #ffffff;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    #footer {
+        background-image: url(./assets/tablet/image-footer.jpg);
+    }
+
+    .hidden-img{
+        display: block;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .img-cover {
+        display: none;
+    }
+    .flex , h1, .header-quote{
+        width: 100%;
+        max-width: 100%;
+    }
+    .img-gallary {
+        width: 151px;
+        height: 143px;
+    }
+    .last, .last-quote, h2 {
+        max-width: 100%;
+    }
+    .content {
+        max-width: 100%;
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    #footer, .footer-container {
+        height: auto;
+    }
+    .footer-button, .footer-title, .footer-quote {
+        max-width: 100%;
+        text-align: center;
+    }
+
+}
