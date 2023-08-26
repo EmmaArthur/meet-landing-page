@@ -15,11 +15,11 @@ body {
 }
 .flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: inherit;
+    justify-content: space-between;
     align-items: center;
-    gap: 32px;
 }
+
 .img-cover {
     width: 370px;
     height: 310px;
@@ -35,17 +35,21 @@ body {
 h1 {
     font-size: 64px;
     line-height: 64px;
+    font-weight: 900;
     color: #28283D;
     width: 445px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: bold;
 }
+
 .header-quote {
     font-size: 18px;
     color: #87879D;
     line-height: 26px;
+    font-weight: 500;
     width: 540px;
+    max-width: 90%;
+    margin: auto;
     text-align: center;
 }
 button {
@@ -110,7 +114,6 @@ button:hover {
 }
 .gallary-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     align-items: center;
@@ -131,14 +134,14 @@ button:hover {
     letter-spacing: 4px;
     color: #4D96A9;
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
     margin-top: 0;
 }
 h2 {
     width: 445px;
     font-size: 40px;
     line-height: 44px;
-    font-weight: bold;
+    font-weight: 900;
     color: #28283D;
     text-align: center;
     margin: 30px auto;
@@ -147,6 +150,7 @@ h2 {
     width: 600px;
     font-size: 18px;
     line-height: 26px;
+    font-weight: 500;
     color: #87879D;
     text-align: center;
     margin-bottom: 0;
@@ -173,26 +177,35 @@ h2 {
     width: 340px;
     font-size: 40px;
     text-align: left;
-    font-weight: bold;
+    font-weight: 900;
     color: #ffffff;
 }
 .footer-quote {
     width: 320px;
     font-size: 18px;
+    font-weight: 500;
     line-height: 26px;
     vertical-align: top;
     color: #ffffff;
     text-align: left;
 }
-@media (max-width: 768px){
+@media (min-width: 1200px){
+
+}
+@media (min-width: 767px) and (max-width: 1199px){
     #footer {
         background-image: url(./assets/tablet/image-footer.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .flex {
+        justify-content: center;
+        flex-direction: wrap;
+    }
 
     .hidden-img{
         display: block;
+        width: 100%;
         max-width: 100%;
         margin-bottom: 40px;
     }
@@ -211,9 +224,13 @@ h2 {
         margin: auto;
         margin-bottom: 50px;
     }
+    .gallary-container {
+        flex-wrap: inherit;
+    }
     .img-gallary {
-        width: 151px;
-        height: 143px;
+        width: 164px;
+        height: 156px;
+        width: 100%;
     }
     .last, .last-quote, h2 {
         max-width: 100%;
@@ -239,10 +256,53 @@ h2 {
         margin-top: 0;
     }
 }
-@media (max-width: 400px) {
+@media  (max-width: 767px){
+    .hidden-img{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .flex {
+        justify-content: center;
+        flex-direction: wrap;
+    }
+    .img-cover {
+        display: none;
+    }
     h1 {
         width: 80%;
         font-size: 50px;
+        max-width: 100%;;
+    }
+    .flex{
+        width: 100%;
+        max-width: 100%;
+    }
+    .header-quote {
+        max-width: 100%;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .gallary-container {
+        flex-wrap: wrap;
+    }
+    .img-gallary {
+        width: 151px;
+        height: 143px;    
+    }
+    .last-quote, h2 {
+        max-width: 100%;
+    }
+    .content {
+        max-width: 95%;
+        width: 100%;
+        margin: auto;
+    }
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
     }
     .button {
         display: flex;
@@ -254,11 +314,26 @@ h2 {
     .last {
         max-width: 90%;
     }
-    .content {
-        max-width: 95%;
-        margin: auto;
+    #footer, .footer-container {
+        height: 500px;
     }
+
+    .footer-button, .footer-title, .footer-quote {
+        text-align: center;
+        max-width: 100%;
+    }
+    .footer-quote {
+        width: 75%;
+        margin-top: 0;
+    }
+
     #footer {
         background-image: url(./assets/mobile/image-footer.jpg);
+        background-size: cover;
+    }
+}
+@media (max-width: 375px){
+    .circle-two {
+        margin-top: 50%;
     }
 }
