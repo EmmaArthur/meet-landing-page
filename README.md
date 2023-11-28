@@ -2,7 +2,7 @@
 
 #DESCRIPTION
 
-The home page of a group chat called meet where people can send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.
+A responsive home page of a group chat called meet where people can send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.
 
 #STRUCTURE
 
